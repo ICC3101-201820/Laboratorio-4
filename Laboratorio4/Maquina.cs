@@ -15,7 +15,7 @@ namespace Laboratorio4
             this.etiqueta = etiqueta;
         }
 
-        public virtual int Calcular(int numero)
+        protected virtual int Calcular(int numero)
         {
             return 0;
         }

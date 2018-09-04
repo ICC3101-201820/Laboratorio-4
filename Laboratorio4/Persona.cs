@@ -15,7 +15,7 @@ namespace Laboratorio4
             this.nombre = nombre;
         }
 
-       public virtual int Calcular(int numero)
+       protected virtual int Calcular(int numero)
        {
             return 0;
        }
