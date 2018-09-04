@@ -15,9 +15,7 @@ namespace Laboratorio4
 
         public override int Calcular(int numero)
         {
-            return (int)Math.Pow(numero, 2);
+            return numero * numero;
         }
-
-
     }
 }

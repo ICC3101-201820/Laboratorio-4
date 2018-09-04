@@ -8,6 +8,7 @@ namespace Laboratorio4
 {
     class ComputadorCentral
     {
+        private static Random random = new Random();
         private ICalcular[] calculadoras;
         private static int numero = 0;
 
@@ -19,7 +20,6 @@ namespace Laboratorio4
 
         public void Calcular()
         {
-            Random random = new Random();
             int maquinaCalculadora = random.Next(0, calculadoras.Length);
             numero = calculadoras[maquinaCalculadora].Calcular(numero);
         }
@@ -30,11 +30,9 @@ namespace Laboratorio4
             calculadoras[calculadoras.Length - 1] = calculadora;
         }
 
-       public int GetNumero()
+        public int GetNumero()
         {
             return numero; 
         }
-
-
     }
 }
